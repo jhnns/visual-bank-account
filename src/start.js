@@ -1,12 +1,13 @@
 // @ts-check
 
-import {loadEntries} from "./config.js";
-import {renderList} from "./render.js";
+import {loadEntries, groupBy} from "./config.js";
+import VerticalList from "./view/VerticalList.js";
 
 async function start() {
-    const rawEntries = await loadEntries();
+    const entries = await loadEntries();
+    const view = H(VerticalList, {entries, groupBy});
 
-    renderList(rawEntries);
+    R(view, document.body);
 }
 
 start();
