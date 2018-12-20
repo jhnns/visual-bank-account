@@ -1,10 +1,10 @@
 // @ts-check
 
-import {loadRawEntries} from "./config.js";
+import {loadEntries} from "./config.js";
 import {renderList} from "./render.js";
 
 async function start() {
-    const rawEntries = await loadRawEntries();
+    const rawEntries = await loadEntries();
 
     renderList(rawEntries);
 }

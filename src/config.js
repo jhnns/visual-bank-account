@@ -3,23 +3,17 @@
 /**
  * @typedef {object} Entry
  * @prop {string} id - a serializable id
+ * @prop {string} originId - a unique identifier for the origin account of that entry
  * @prop {string} date - as ISO string
  * @prop {number} amount - positive numbers for earnings, negative for spendings
  * @prop {string} oppositeId
  * @prop {string} oppositeName
  * @prop {string} description
+ * @prop {object} raw - a reference to the original entry object
  */
 
 /**
- * @typedef {object} RawEntry
+ * @typedef {function(): Promise<Array<Entry>>} LoadEntries
  */
 
-/**
- * @typedef {function(): Promise<RawEntry>} LoadRawEntries
- */
-
-/**
- * @typedef {function(RawEntry): Entry} ToEntry
- */
-
-export {orderBy, loadRawEntries, toEntry} from "../data/config.js";
+export {groupBy, loadEntries} from "../data/config.js";
