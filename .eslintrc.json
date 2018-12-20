@@ -1,0 +1,18 @@
+{
+    "extends": [
+        "peerigon"
+    ],
+    "root": true,
+    "env": {
+        "browser": true
+    },
+    "globals": {
+        "H": true,
+        "R": true
+    },
+    "rules": {
+        "valid-jsdoc": "off",
+        "jsdoc/valid-types": "off",
+        "jsdoc/require-param": "off"
+    }
+}

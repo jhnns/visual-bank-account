@@ -1,0 +1,30 @@
+{
+  "name": "visual-bank-account",
+  "version": "1.0.0",
+  "description": "Visualizes earnings and spendings of your bank account",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhnns/visual-bank-account.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Johannes Ewald",
+    "email": "mail@johannesewald.de"
+  },
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/jhnns/visual-bank-account/issues"
+  },
+  "homepage": "https://github.com/jhnns/visual-bank-account#readme",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-peerigon": "^15.0.2"
+  },
+  "dependencies": {
+    "dot-dom": "^0.2.2"
+  }
+}
