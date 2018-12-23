@@ -1,11 +1,12 @@
+import {h, r} from "./lib/view.js";
 import {loadEntries, groupBy} from "./config.js";
 import VerticalList from "./view/VerticalList.js";
 
 async function start() {
     const entries = await loadEntries();
-    const view = H(VerticalList, {entries, groupBy});
+    const view = h(VerticalList, {entries, groupBy});
 
-    R(view, document.body);
+    r(view, document.body);
 }
 
 start();

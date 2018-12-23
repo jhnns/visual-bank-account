@@ -1,6 +1,7 @@
+import {h} from "../lib/view.js";
 import Entry from "./Entry.js";
 
-const {li, p, ol} = H;
+const {li, p, ol} = h;
 
 export default function VerticalList({entries, groupBy, level = 0}) {
     if (level < groupBy.length) {
@@ -9,10 +10,10 @@ export default function VerticalList({entries, groupBy, level = 0}) {
 
         return ol(
             ...groups.map(group =>
-                li(p(group.label), H(VerticalList, {entries: group.entries, groupBy, level: level + 1}))
+                li(p(group.label), h(VerticalList, {entries: group.entries, groupBy, level: level + 1}))
             )
         );
     }
 
-    return ol(...entries.map(entry => H(Entry, entry)));
+    return ol(...entries.map(entry => h(Entry, entry)));
 }

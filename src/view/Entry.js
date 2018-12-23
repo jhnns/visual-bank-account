@@ -1,4 +1,6 @@
-const {div} = H;
+import {h} from "../lib/view.js";
+
+const {div} = h;
 
 export default function Entry({date, oppositeName, description, amount, currency}) {
     const currencyFormat = new Intl.NumberFormat(undefined, {style: "currency", currency});
