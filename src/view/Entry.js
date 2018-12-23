@@ -1,5 +1,3 @@
-// @ts-check
-
 const {div} = H;
 
 export default function Entry({date, oppositeName, description, amount, currency}) {

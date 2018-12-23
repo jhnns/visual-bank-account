@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * @typedef {object} Group
  * @prop {string} id

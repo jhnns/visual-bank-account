@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * @typedef {object} Entry
  * @prop {string} id - a serializable id

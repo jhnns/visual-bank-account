@@ -1,5 +1,3 @@
-// @ts-check
-
 import Entry from "./Entry.js";
 
 const {li, p, ol} = H;

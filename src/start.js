@@ -1,5 +1,3 @@
-// @ts-check
-
 import {loadEntries, groupBy} from "./config.js";
 import VerticalList from "./view/VerticalList.js";
 
