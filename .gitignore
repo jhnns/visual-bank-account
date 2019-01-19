@@ -61,7 +61,4 @@ typings/
 .next
 
 # data folder with private data
-/data
-
-# personal configuration 
-/config
+/private

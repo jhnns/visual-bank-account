@@ -14,4 +14,4 @@
  * @typedef {function(): Promise<Array<Entry>>} LoadEntries
  */
 
-export {groupBy, loadEntries} from "../data/config.js";
+export {groups, loadEntries} from "../private/config.js";

@@ -6,13 +6,12 @@
     "env": {
         "browser": true
     },
-    "globals": {
-        "H": true,
-        "R": true
-    },
     "rules": {
         "valid-jsdoc": "off",
         "jsdoc/valid-types": "off",
-        "jsdoc/require-param": "off"
+        "jsdoc/require-param": "off",
+        "jsdoc/no-undefined-types": "off",
+        "import/no-unassigned-import": "off",
+        "class-methods-use-this": "off"
     }
 }

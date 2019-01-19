@@ -4,6 +4,7 @@
   "description": "Visualizes earnings and spendings of your bank account",
   "main": "index.js",
   "scripts": {
+    "dev": "polymer serve",
     "test": "echo \"Error: no test specified\" && exit 0",
     "posttest": "eslint src"
   },
@@ -21,11 +22,12 @@
     "url": "https://github.com/jhnns/visual-bank-account/issues"
   },
   "homepage": "https://github.com/jhnns/visual-bank-account#readme",
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.5"
+  },
   "devDependencies": {
     "eslint": "^5.10.0",
-    "eslint-config-peerigon": "^15.0.2"
-  },
-  "dependencies": {
-    "dot-dom": "^0.2.2"
+    "eslint-config-peerigon": "^15.0.2",
+    "polymer-cli": "^1.9.4"
   }
 }
